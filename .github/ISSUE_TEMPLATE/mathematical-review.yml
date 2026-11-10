@@ -1,0 +1,92 @@
+name: Mathematical review report
+description: Verify a claim or report a gap, ambiguity, or counterexample
+title: "[Review] "
+labels:
+  - human-review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for providing an independent review. Partial and critical
+        reviews are welcome. Please identify an immutable release or commit.
+  - type: input
+    id: version
+    attributes:
+      label: Version reviewed
+      description: Release/tag, commit and Zenodo DOI if available.
+      placeholder: v0.1-review; commit ...; DOI ...
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: Exact location
+      description: Document, section, equation, lemma, proposition or line.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Review area
+      multiple: true
+      options:
+        - Homogeneous dynamics / affine lattices
+        - Geometry of numbers / flatness
+        - Convex or discrete geometry
+        - Probability / convergence
+        - Numerical reproducibility
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: conclusion
+    attributes:
+      label: Conclusion
+      options:
+        - Verified
+        - Correct after a minor clarification
+        - Repairable gap
+        - Potentially blocking gap
+        - Counterexample or false statement
+        - Unable to determine
+    validations:
+      required: true
+  - type: textarea
+    id: statement
+    attributes:
+      label: Statement as understood
+      description: Restate the claim or proof step you reviewed.
+    validations:
+      required: true
+  - type: textarea
+    id: analysis
+    attributes:
+      label: Analysis
+      description: Give the argument, calculation, reference, missing hypothesis or counterexample.
+    validations:
+      required: true
+  - type: textarea
+    id: consequence
+    attributes:
+      label: Consequence for the main theorem
+      description: Explain whether the finding is local or affects the principal limit theorem.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction or next test
+      description: Optional.
+  - type: textarea
+    id: disclosure
+    attributes:
+      label: Reviewer disclosure and acknowledgement preference
+      description: Optional expertise, conflict of interest, preferred name/ORCID, and whether you may be acknowledged.
+  - type: checkboxes
+    id: independence
+    attributes:
+      label: Review declaration
+      options:
+        - label: I have distinguished verified steps from plausibility judgements in this report.
+          required: true
+

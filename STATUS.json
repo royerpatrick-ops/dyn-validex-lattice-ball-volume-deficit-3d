@@ -1,0 +1,30 @@
+{
+  "version": "0.1-review",
+  "doi": "10.5281/zenodo.24112798",
+  "creator": {
+    "name": "ROYER Patrick",
+    "project": "Projet Dynagénèse",
+    "orcid": "0009-0009-4149-2834"
+  },
+  "scientific_status": "proof_candidate",
+  "human_review": {
+    "status": "not_run",
+    "independent_review_received": false
+  },
+  "internal_audit": {
+    "ai_assisted": true,
+    "independent": false,
+    "blocking_gap_found": false
+  },
+  "ai_assistance": {
+    "integrated": ["ChatGPT", "Codex"],
+    "occasional": ["Claude AI", "DeepSeek", "Z.ai", "Kimi"],
+    "human_authorship_only": true
+  },
+  "claims_excluded": [
+    "explicit numerical value of C_V",
+    "quantitative convergence rate",
+    "surface-area asymptotic",
+    "independent numerical reproduction"
+  ]
+}

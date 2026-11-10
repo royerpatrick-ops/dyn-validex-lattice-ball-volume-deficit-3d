@@ -1,0 +1,132 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,margin=25mm,headheight=14pt]{geometry}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Consolas}[Scale=0.82]
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage{parskip}
+
+\definecolor{DynBlue}{HTML}{153E5C}
+\definecolor{DynGold}{HTML}{C58B2A}
+\definecolor{StatusBg}{HTML}{FFF5E2}
+\definecolor{StatusBorder}{HTML}{B06B00}
+\definecolor{LinkBlue}{HTML}{0A5E8A}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=DynBlue,
+  urlcolor=LinkBlue,
+  citecolor=DynBlue,
+  pdftitle={Déficit volumique des enveloppes de réseaux translatés en dimension trois},
+  pdfauthor={ROYER Patrick - Projet Dynagénèse},
+  pdfsubject={Preuve candidate soumise à relecture mathématique humaine},
+  pdfkeywords={réseaux; enveloppe convexe; dynamique homogène; géométrie des nombres; déficit volumique}
+}
+
+\setlist{leftmargin=*,itemsep=0.35em,topsep=0.45em}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\allowdisplaybreaks
+\raggedbottom
+\emergencystretch=1.5em
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\renewcommand{\contentsname}{Table des matières}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[L]{\small\sffamily Preuve candidate - non relue par les pairs}
+\fancyfoot[R]{\small\sffamily v0.1-review · \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[L]{\small\sffamily Preuve candidate - non relue par les pairs}
+  \fancyfoot[R]{\small\sffamily v0.1-review · \thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\newcommand{\statusbox}[1]{%
+  \begin{center}
+  \fcolorbox{StatusBorder}{StatusBg}{%
+    \parbox{0.90\textwidth}{\sffamily\small #1}%
+  }
+  \end{center}
+}
+
+\begin{document}
+
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{15mm}
+{\sffamily\color{DynGold}\large PROJET DYNAGÉNÈSE / DYN-VALIDEX \hfill PRÉPUBLICATION DE TRAVAIL\par}
+\vspace{18mm}
+{\sffamily\bfseries\color{DynBlue}\fontsize{24}{29}\selectfont
+Déficit volumique de l’enveloppe\\[2mm]
+convexe d’un réseau translaté\\[2mm]
+dans une boule\par}
+\vspace{8mm}
+{\sffamily\Large Preuve candidate en dimension trois\par}
+\vspace{18mm}
+{\large ROYER Patrick\par}
+{\small Projet Dynagénèse - recherche indépendante\par}
+{\small ORCID : \href{https://orcid.org/0009-0009-4149-2834}{0009-0009-4149-2834}\par}
+\vspace{4mm}
+{\small Version v0.1-review - 10 novembre 2026\par}
+\vfill
+\statusbox{%
+\textbf{Statut scientifique : manuscrit de travail non relu par les pairs.}
+Ce document est diffusé pour solliciter une relecture mathématique humaine,
+indépendante et critique. Les audits internes ont été assistés par IA et ne
+constituent pas une validation externe. Le résultat principal ne doit pas
+encore être cité comme un théorème établi.}
+\vspace{8mm}
+{\small\sffamily
+Portée : déficit volumique, boule euclidienne, translation fixe de
+\(\mathbb Z^3\). Aucune valeur fermée de la constante limite, aucun taux de
+convergence et aucun analogue surfacique ne sont revendiqués.\par}
+\vspace{12mm}
+{\footnotesize\sffamily\color{DynBlue}
+Licence du texte : CC BY 4.0\par
+\vspace{1mm}
+Dépôt : \href{https://doi.org/10.5281/zenodo.24112798}{10.5281/zenodo.24112798}\par}
+\end{titlepage}
+
+\pagenumbering{roman}
+\statusbox{%
+\textbf{Demande de relecture prioritaire.}
+Les points les plus exposés sont l’équidistribution affine via Moore-Ratner,
+la queue uniforme fondée sur la platitude, la convergence
+\(H_{P_R}\to H_P\) et le passage final aux espérances. Les objections,
+contre-exemples et hypothèses manquantes sont explicitement bienvenus.}
+
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+
+\input{body.tex}
+
+\section*{Transparence, responsabilité et licence}
+Le travail a bénéficié d’une assistance substantielle et intégrée de ChatGPT
+et Codex pour l’exploration, la rédaction, les vérifications, la
+consolidation, la programmation et la critique interne. Claude AI, DeepSeek,
+Z.ai et Kimi ont été consultés plus ponctuellement. Ces systèmes ne sont ni
+auteurs ni relecteurs humains et l’audit interne n’est pas indépendant. ROYER
+Patrick - Projet Dynagénèse demeure seul responsable des affirmations et des
+fichiers déposés.
+
+Le texte est diffusé sous licence Creative Commons Attribution 4.0
+International. Le code original associé est diffusé sous licence MIT. DOI
+Zenodo de cette version :
+\href{https://doi.org/10.5281/zenodo.24112798}{10.5281/zenodo.24112798}.
+
+\end{document}

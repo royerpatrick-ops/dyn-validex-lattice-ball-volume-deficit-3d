@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: >-
+  Please cite the versioned Zenodo record below. The work is not yet
+  peer-reviewed. Documents and data use CC BY 4.0; original code uses MIT.
+title: "Volume deficit of translated lattice hulls in three dimensions: a candidate asymptotic theorem"
+type: dataset
+authors:
+  - family-names: ROYER
+    given-names: Patrick
+    affiliation: "Projet Dynagénèse"
+    orcid: "https://orcid.org/0009-0009-4149-2834"
+version: 0.1-review
+date-released: 2026-11-10
+license: CC-BY-4.0
+doi: 10.5281/zenodo.24112798
+repository-code: "https://github.com/royerpatrick-ops/dyn-validex-lattice-ball-volume-deficit-3d"
+url: "https://doi.org/10.5281/zenodo.24112798"
+keywords:
+  - lattice points
+  - convex hull
+  - random lattices
+  - homogeneous dynamics
+  - geometry of numbers
+  - asymptotic geometry
+  - volume deficit
+preferred-citation:
+  type: article
+  authors:
+    - family-names: ROYER
+      given-names: Patrick
+      affiliation: "Projet Dynagénèse"
+      orcid: "https://orcid.org/0009-0009-4149-2834"
+  title: "Volume deficit of translated lattice hulls in three dimensions: a candidate asymptotic theorem"
+  year: 2026
+  version: "0.1-review"
+  doi: 10.5281/zenodo.24112798
+  url: "https://doi.org/10.5281/zenodo.24112798"

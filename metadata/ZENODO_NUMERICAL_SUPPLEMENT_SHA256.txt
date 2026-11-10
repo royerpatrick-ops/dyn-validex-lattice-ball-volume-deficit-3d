@@ -1,0 +1,10 @@
+# SHA-256 - frozen numerical archives proposed for the Zenodo supplement
+# Total size: 189,339,018 bytes (180.57 MiB)
+
+9d7354774d131413b79353c9377a86af616ea9c8dc9f2f6a8c09b7235c8d0129  DYN-Analyse_Asymptotique_3D_v0_1.zip
+344b2dbc2ff5f13eb53d7bf8922f4037ebf5291fadde9157e901d50f92eee1c7  DYN-Cinf_3D_R192_R256_v0_1.zip
+84ed8c8530cb145d4824527b1879bfd5655ed711b212da97266a3fc59d9480af  DYN-Doublement_3D_R512.zip
+e279c2178366c7829de641fea2f92347a593b51fc701a7ce57dbbef6044d4c86  DYN-Extension_Statique_3D_R48_R64_v0_1.zip
+530c174dee99ff1556c5124cd208e2a59078c4341dab91bd60905ad97bc39280  DYN-Extension_Statique_3D_R96_R128_v0_1.zip
+5c63df2949efed6e94f9dc275e2fdfadd5420183ad5c3bf65580e5c7483de4d6  DYN-Modele_Statique_3D_v0_1.zip
+
